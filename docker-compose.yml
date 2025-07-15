@@ -1,0 +1,9 @@
+services:
+  zevbot:
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    container_name: zevbot
+    volumes:
+      - ./.env:/code/app/.env
+    restart: unless-stopped
