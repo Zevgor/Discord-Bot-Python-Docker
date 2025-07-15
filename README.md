@@ -14,7 +14,6 @@ A Discord music and utility bot built with Python, designed to run in a Docker c
 - Docker
 - Discord Bot Token
 - Blizzard API Credentials
-- YouTube-dl/yt-dlp
 
 ## Setup
 
@@ -51,8 +50,5 @@ docker-compose.yml # Docker Compose config
 
 ## Notes
 - Only works in allowed channels specified in `DISCORD_CHANNELS`.
-- Requires FFmpeg for audio streaming.
+- Uses FFmpeg for audio streaming (built out in Dockerfile).
 - Make sure your bot has the necessary Discord permissions (voice, messages).
-
-## License
-MIT
